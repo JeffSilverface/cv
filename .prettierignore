@@ -1,0 +1,10 @@
+# Ignore artifacts:
+build/
+coverage/
+node_modules/
+pnpm-lock.yaml
+
+# Ignore assets
+.storybook/
+dist/
+public/
