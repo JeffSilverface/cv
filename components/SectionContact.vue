@@ -5,7 +5,7 @@ const handleSubmit = () => {
 </script>
 
 <template>
-  <section id="contact" class="snap-start min-h-screen flex items-center justify-center bg-gray-100">
+  <div class="w-full h-full flex items-center justify-center bg-gray-100">
     <div class="max-w-lg w-full p-6 bg-white rounded-lg shadow-md">
       <h2 class="text-3xl font-bold mb-6 text-center">Contactez-moi</h2>
       <form @submit.prevent="handleSubmit">
@@ -43,5 +43,5 @@ const handleSubmit = () => {
         </div>
       </form>
     </div>
-  </section>
+  </div>
 </template>

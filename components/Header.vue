@@ -8,7 +8,7 @@ const scrollToSection = (id: string) => {
 </script>
 
 <template>
-  <div class="fixed top-0 left-0 right-0 bg-transparent z-10">
+  <nav class="fixed top-0 left-0 right-0 bg-transparent z-10">
     <div class="container mx-auto flex justify-between items-center p-4">
       <a @click="scrollToSection('home')" class="text-red-500 cursor-pointer">Accueil</a>
       <a @click="scrollToSection('about')" class="text-red-500 cursor-pointer">À propos</a>
@@ -16,5 +16,5 @@ const scrollToSection = (id: string) => {
       <a @click="scrollToSection('skills')" class="text-red-500 cursor-pointer"> Compétences </a>
       <a @click="scrollToSection('contact')" class="text-red-500 cursor-pointer">Contact</a>
     </div>
-  </div>
+  </nav>
 </template>
