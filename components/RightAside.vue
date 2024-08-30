@@ -26,9 +26,9 @@ watch(
 
 <template>
   <div class="w-24 bg-transparent h-screen fixed top-0 right-4 flex justify-center items-center">
-    <div :class="['relative w-1 h-80 transition-all duration-700', isColorChanged ? 'bg-red-400' : 'bg-red-600']">
+    <div :class="['relative w-0.5 h-80 transition-all duration-700', isColorChanged ? 'bg-red-400' : 'bg-red-600']">
       <div
-        class="absolute bottom-0 bg-black transition-all duration-300 w-1.5 left-1/2 transform -translate-x-1/2"
+        class="absolute bottom-0 bg-black transition-all duration-300 w-1 left-1/2 transform -translate-x-1/2"
         :style="{ height: calculateBarHeight(props.sectionIndex, props.maxSections) + '%' }"
       />
     </div>

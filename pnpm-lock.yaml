@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@phosphor-icons/vue':
+    specifier: ^2.2.1
+    version: 2.2.1(vue@3.4.38)
   nuxt:
     specifier: ^3.13.0
     version: 3.13.0(vite@5.4.2)
@@ -1497,6 +1500,15 @@ packages:
       '@parcel/watcher-win32-arm64': 2.4.1
       '@parcel/watcher-win32-ia32': 2.4.1
       '@parcel/watcher-win32-x64': 2.4.1
+    dev: false
+
+  /@phosphor-icons/vue@2.2.1(vue@3.4.38):
+    resolution: {integrity: sha512-3RNg1utc2Z5RwPKWFkW3eXI/0BfQAwXgtFxPUPeSzi55jGYUq16b+UqcgbKLazWFlwg5R92OCLKjDiJjeiJcnA==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      vue: '>=3.2.39'
+    dependencies:
+      vue: 3.4.38
     dev: false
 
   /@pkgjs/parseargs@0.11.0:
