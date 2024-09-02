@@ -14,7 +14,7 @@ const calculateBarHeight = (index: number, max: number) => {
 
 watch(
   () => props.sectionIndex,
-  (newVal, oldVal) => {
+  () => {
     isColorChanged.value = true
 
     setTimeout(() => {
