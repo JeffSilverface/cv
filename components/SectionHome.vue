@@ -3,7 +3,7 @@
 <template>
   <div class="w-full h-full flex items-center justify-center section">
     <video id="background-video" autoplay loop muted>
-      <source src="../assets/video/welcome.mp4" type="video/mp4" />
+      <source type="video/mp4" />
     </video>
     <h1 class="text-5xl font-bold text-blue-500">Bienvenue!</h1>
     <h1>{{ $t('welcome') }}</h1>

@@ -1,3 +1,13 @@
 {
+  "header-home": "Home",
+  "header-about": "About me",
+  "header-experience": "Experiences",
+  "header-skills": "Skills",
+  "header-contact": "Contact",
+
+  "first-name": "Jean-François",
+  "first-name-short": "JF",
+  "last-name": "Pann",
+
   "welcome": "Welcome"
 }

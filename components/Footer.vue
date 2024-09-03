@@ -1,13 +1,23 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+const { locale } = useI18n()
+
+const currentYear = new Date().getFullYear()
+const changeLanguage = (lang: string) => {
+  locale.value = lang
+}
+</script>
 
 <template>
   <div class="fixed bottom-0 left-0 right-0 bg-transparent z-10">
-    <div class="container mx-auto py-4 px-4 flex justify-between items-center">
-      <div class="text-gray-700">&copy; 2024 Mon Site. Tous droits réservés.</div>
-      <div class="flex space-x-4">
-        <a href="#" class="text-gray-600 hover:text-blue-500">Politique de confidentialité</a>
-        <a href="#" class="text-gray-600 hover:text-blue-500">Conditions d'utilisation</a>
-        <a href="#" class="text-gray-600 hover:text-blue-500">Mentions légales</a>
+    <div class="w-full justify-between flex items-center p-12">
+      <p class="text-gray-700">
+        {{ currentYear }}
+        <NuxtLink to="https://github.com/JeffSilverface/cv" target="_blank"> Licence GPLv3 OpenSource </NuxtLink>
+      </p>
+      <div class="flex space-x-6">
+        <button @click="changeLanguage('fr')" :class="locale === 'fr' ? 'text-red-600' : 'text-black'">FR</button>
+        <button @click="changeLanguage('en')" :class="locale === 'en' ? 'text-red-600' : 'text-black'">ENG</button>
       </div>
     </div>
   </div>

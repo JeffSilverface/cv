@@ -7,16 +7,21 @@ import { PhLinkedinLogo, PhGithubLogo } from '@phosphor-icons/vue'
     <div class="relative h-full flex flex-col items-center justify-center">
       <div class="w-0.5 h-full bg-black mb-4 mt-32"></div>
 
-      <a
+      <NuxtLink
         href="https://www.linkedin.com/in/jfpann/"
         target="_blank"
         class="mt-4 mb-4 text-black hover:text-red-600 icon-link"
       >
         <PhLinkedinLogo :size="32" weight="fill" />
-      </a>
-      <a href="https://github.com/JeffSilverface" target="_blank" class="mb-4 text-black hover:text-red-600 icon-link">
+      </NuxtLink>
+
+      <NuxtLink
+        href="https://github.com/JeffSilverface"
+        target="_blank"
+        class="mb-4 text-black hover:text-red-600 icon-link"
+      >
         <PhGithubLogo :size="32" weight="fill" />
-      </a>
+      </NuxtLink>
 
       <div class="w-0.5 h-full bg-black mt-4 mb-32"></div>
     </div>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 interface RightAsideProps {
   sectionIndex: number
-  maxSections: number // Nombre total de sections sur la page
+  maxSections: number
 }
 
 const props = defineProps<RightAsideProps>()

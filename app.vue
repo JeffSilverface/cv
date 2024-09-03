@@ -70,7 +70,7 @@ watchEffect(() => {
 <template>
   <div class="flex flex-col h-screen">
     <header>
-      <Header />
+      <Header :section-index="currentSectionIndex" />
     </header>
 
     <main class="flex-1 snap-y snap-mandatory overflow-y-scroll h-screen">
