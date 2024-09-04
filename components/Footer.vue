@@ -2,6 +2,8 @@
 import { useI18n } from 'vue-i18n'
 const { locale } = useI18n()
 
+console.log('locale', locale.value)
+
 const currentYear = new Date().getFullYear()
 const changeLanguage = (lang: string) => {
   locale.value = lang
@@ -16,8 +18,8 @@ const changeLanguage = (lang: string) => {
         <NuxtLink to="https://github.com/JeffSilverface/cv" target="_blank"> Licence GPLv3 OpenSource </NuxtLink>
       </p>
       <div class="flex space-x-6">
-        <button @click="changeLanguage('fr')" :class="locale === 'fr' ? 'text-red-600' : 'text-black'">FR</button>
-        <button @click="changeLanguage('en')" :class="locale === 'en' ? 'text-red-600' : 'text-black'">ENG</button>
+        <button @click="changeLanguage('fr')" :class="locale === 'fr-FR' ? 'text-red-600' : 'text-black'">FR</button>
+        <button @click="changeLanguage('en')" :class="locale === 'en-GB' ? 'text-red-600' : 'text-black'">ENG</button>
       </div>
     </div>
   </div>
