@@ -14,6 +14,9 @@ dependencies:
   vue:
     specifier: latest
     version: 3.4.38
+  vue-i18n:
+    specifier: 9.14.0
+    version: 9.14.0(vue@3.4.38)
 
 devDependencies:
   '@nuxtjs/i18n':
@@ -1054,7 +1057,6 @@ packages:
     dependencies:
       '@intlify/message-compiler': 9.14.0
       '@intlify/shared': 9.14.0
-    dev: true
 
   /@intlify/core@9.14.0:
     resolution: {integrity: sha512-lPZ78GkDFcppC9Ol8oruyPGJbBWvTYDTEAJBebDtGmDIeggDJAiR+XMbCPZAOeW4/XszcIeiGYKEx0BvQDjVTw==}
@@ -1078,12 +1080,10 @@ packages:
     dependencies:
       '@intlify/shared': 9.14.0
       source-map-js: 1.2.0
-    dev: true
 
   /@intlify/shared@9.14.0:
     resolution: {integrity: sha512-r+N8KRQL7LgN1TMTs1A2svfuAU0J94Wu9wWdJVJqYsoMMLIeJxrPjazihfHpmJqfgZq0ah3Y9Q4pgWV2O90Fyg==}
     engines: {node: '>= 16'}
-    dev: true
 
   /@intlify/unplugin-vue-i18n@3.0.1(rollup@4.21.0)(vue-i18n@9.14.0):
     resolution: {integrity: sha512-q1zJhA/WpoLBzAAuKA5/AEp0e+bMOM10ll/HxT4g1VAw/9JhC4TTobP9KobKH90JMZ4U2daLFlYQfKNd29lpqw==}
@@ -6366,7 +6366,6 @@ packages:
       '@intlify/shared': 9.14.0
       '@vue/devtools-api': 6.6.3
       vue: 3.4.38
-    dev: true
 
   /vue-router@4.4.3(vue@3.4.38):
     resolution: {integrity: sha512-sv6wmNKx2j3aqJQDMxLFzs/u/mjA9Z5LCgy6BE0f7yFWMjrPLnS/sPNn8ARY/FXw6byV18EFutn5lTO6+UsV5A==}
