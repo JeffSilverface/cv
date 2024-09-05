@@ -33,6 +33,7 @@ const headerList = [
     id: 'skills',
     i18nName: 'header-skills',
   },
+  { id: 'projects', i18nName: 'header-projects' },
   {
     id: 'contact',
     i18nName: 'header-contact',
@@ -43,7 +44,7 @@ const headerList = [
 <template>
   <nav class="fixed top-0 left-0 right-0 bg-transparent z-10">
     <div class="w-full justify-between flex items-center p-12">
-      <h1 class="">{{ $t('first-name-short').toUpperCase() }}.{{ $t('last-name').toUpperCase() }}</h1>
+      <h1 class="">{{ $t('first-name-short') }}.{{ $t('last-name') }}</h1>
       <div>
         <NuxtLink
           v-for="(item, index) in headerList"

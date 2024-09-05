@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
-import SectionHome from '~/components/SectionHome.vue'
-import SectionAboutMe from '~/components/SectionAboutMe.vue'
-import SectionExperience from '~/components/SectionExperience.vue'
-import SectionSkills from '~/components/SectionSkills.vue'
-import SectionContact from '~/components/SectionContact.vue'
+import SectionHome from '~/components/organisms/SectionHome.vue'
+import SectionAboutMe from '~/components/organisms/SectionAboutMe.vue'
+import SectionExperience from '~/components/organisms/SectionExperience.vue'
+import SectionSkills from '~/components/organisms/SectionSkills.vue'
+import SectionContact from '~/components/organisms/SectionContact.vue'
+import SectionProjects from '~/components/organisms/SectionProjects.vue'
 
 const sections = [
   { component: SectionHome, id: 'home' },
@@ -12,6 +13,7 @@ const sections = [
   { component: SectionExperience, id: 'experience' },
   { component: SectionSkills, id: 'skills' },
   { component: SectionContact, id: 'contact' },
+  { component: SectionProjects, id: 'projects' },
 ]
 
 // Utilisation de ref avec un tableau contenant des HTMLElements ou null
